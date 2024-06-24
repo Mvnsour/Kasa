@@ -1,0 +1,9 @@
+.banner {
+    max-width: 70%;
+    padding: 0 60px;
+    background-image: url("../assets/banner-kasa.png");
+    min-height: 140px;
+    max-width: 300px;
+    border-radius: 15px;
+
+}
