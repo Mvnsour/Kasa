@@ -1,5 +1,6 @@
 .background-apartments-grid {
     background-color: lightgray;
     border-radius: 2rem;
+    display: flex;
 
 }
