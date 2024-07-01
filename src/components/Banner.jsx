@@ -3,7 +3,7 @@ import '../styles/Banner.css'
 function Banner() {
   return (
     <div className="banner">
-      <h2>Chez vous, partout ailleurs</h2>
+      <h1>Chez vous, partout ailleurs</h1>
     </div>
   )
 }
