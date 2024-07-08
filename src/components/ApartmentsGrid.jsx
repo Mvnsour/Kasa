@@ -5,8 +5,6 @@ function ApartmentsGrid() {
   return (
     <div className="background-apartments-grid">
       <Apartment />
-      <Apartment />
-      <Apartment />
     </div>
   )
 }

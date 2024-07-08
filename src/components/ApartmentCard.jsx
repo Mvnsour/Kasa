@@ -1,5 +1,5 @@
 function ApartmentCard({ apartment }) {
-  return <span>{apartment.title}</span>
+  return <span className="apartment-title">{apartment.title}</span>
 }
 
 export default ApartmentCard
