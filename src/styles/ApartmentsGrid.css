@@ -1,5 +1,6 @@
 .background-apartments-grid {
     background-color: lightgray;
+    min-height: 50vh;
     border-radius: 2rem;
     display: flex;
 

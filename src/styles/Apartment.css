@@ -1,12 +1,14 @@
 .apartment-list {
     background-color: red;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover;   image later
+    background-repeat: no-repeat; */
     border-radius: 2rem;
     margin: 1rem;
     padding: 1rem;
     display: flex;
+    flex: 1;
     justify-content: space-around;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
 }
