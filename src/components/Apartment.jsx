@@ -4,10 +4,10 @@ import '../styles/Apartment.css'
 
 function Apartment() {
   return (
-    <ul>
-      {apartmentList.map((apartment, cover) => (
+    <ul className="background-apartments-grid">
+      {apartmentList.map((apartment) => (
         <li className="apartment-list" key={apartment.id}>
-          <ApartmentCard apartment={apartment} cover={cover} />
+          <ApartmentCard apartment={apartment} />
         </li>
       ))}
     </ul>

@@ -3,7 +3,7 @@ import Apartment from './Apartment'
 
 function ApartmentsGrid() {
   return (
-    <div className="background-apartments-grid">
+    <div>
       <Apartment />
     </div>
   )
