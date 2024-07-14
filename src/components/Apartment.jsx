@@ -5,9 +5,9 @@ import '../styles/Apartment.css'
 function Apartment() {
   return (
     <ul>
-      {apartmentList.map((apartment) => (
+      {apartmentList.map((apartment, cover) => (
         <li className="apartment-list" key={apartment.id}>
-          <ApartmentCard apartment={apartment} />
+          <ApartmentCard apartment={apartment} cover={cover} />
         </li>
       ))}
     </ul>
