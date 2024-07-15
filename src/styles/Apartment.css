@@ -1,5 +1,4 @@
 .apartment-list {
-    background-color: red;
     /* background-size: cover;   image later
     background-repeat: no-repeat; */
     border-radius: 2rem;
@@ -13,6 +12,16 @@
     align-items: start;
 }
 
+.apartment-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+}
 .apartment-title {
     color: white;
+}
+
+.card-container a {
+    text-decoration: none;
+    width: 30%;
 }
