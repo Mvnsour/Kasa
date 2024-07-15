@@ -2,11 +2,7 @@ import '../styles/ApartmentsGrid.css'
 import Apartment from './Apartment'
 
 function ApartmentsGrid() {
-  return (
-    <div>
-      <Apartment />
-    </div>
-  )
+  return <Apartment />
 }
 
 export default ApartmentsGrid
