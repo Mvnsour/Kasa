@@ -7,8 +7,27 @@
     margin: 3rem 0;
 }
 
+.logo-kasa {
+    margin-right: auto;
+}
+
 ul {
-    display: flex;
+    padding: 0;
+}
+
+ul a {  
+    display: inline-block;
     justify-content: space-between;
     list-style: none;
+    text-decoration: none;
+    margin-right: 67px;
+    border-bottom: solid 1px transparent;
 } 
+
+ul a:hover {
+    border-bottom: solid 1px black;
+}
+
+ul a:visited {
+    color: black;
+}

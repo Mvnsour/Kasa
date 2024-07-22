@@ -1,9 +1,8 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 function ApartmentCard({ apartment }) {
   return (
-    <React.Fragment>
+    <>
       <div className="card-container">
         <Link to={`/apartment/${apartment.id}`}>
           <img
@@ -14,7 +13,7 @@ function ApartmentCard({ apartment }) {
           <span className="apartment-title">{apartment.title}</span>
         </Link>
       </div>
-    </React.Fragment>
+    </>
   )
 }
 
