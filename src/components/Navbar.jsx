@@ -10,7 +10,6 @@ function Navbar() {
           <img src={kasaLogo} alt="Logo Kasa" className="logo-kasa" />
         </div>
       </Link>
-
       <ul>
         <Link to="/">Acueil </Link>
         <Link to="/about">A propos</Link>
