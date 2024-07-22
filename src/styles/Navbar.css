@@ -15,7 +15,7 @@ ul {
     padding: 0;
 }
 
-ul a {  
+ul .nav-link {  
     display: inline-block;
     justify-content: space-between;
     list-style: none;
@@ -24,10 +24,10 @@ ul a {
     border-bottom: solid 1px transparent;
 } 
 
-ul a:hover {
+ul .nav-link:hover {
     border-bottom: solid 1px black;
 }
 
-ul a:visited {
+ul .nav-link:visited {
     color: black;
 }

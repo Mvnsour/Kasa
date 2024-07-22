@@ -11,8 +11,12 @@ function Navbar() {
         </div>
       </Link>
       <ul>
-        <Link to="/">Acueil </Link>
-        <Link to="/about">A propos</Link>
+        <Link to="/" className="nav-link">
+          Acueil{' '}
+        </Link>
+        <Link to="/about" className="nav-link">
+          A propos
+        </Link>
       </ul>
     </nav>
   )
