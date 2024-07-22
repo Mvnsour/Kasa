@@ -1,6 +1,15 @@
+.background-apartments-grid {
+    background-color: lightgray;
+    min-height: 50vh;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
 .apartment-list {
-    /* background-size: cover;   image later
-    background-repeat: no-repeat; */
     border-radius: 2rem;
     margin: 1rem;
     padding: 1rem;

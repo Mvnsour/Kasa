@@ -1,8 +1,8 @@
 import './styles/App.css'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
-import ApartmentsGrid from './components/ApartmentsGrid'
 import Main from './components/Main'
+import Apartment from './components/Apartment'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Main>
         <Banner />
-        <ApartmentsGrid />
+        <Apartment />
       </Main>
     </div>
   )
