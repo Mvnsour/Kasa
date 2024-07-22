@@ -10,7 +10,7 @@ function Navbar() {
       </div>
       <ul>
         <Link to="/">Acueil </Link>
-        <Link to="/a-propos">A propos</Link>
+        <Link to="/about">A propos</Link>
       </ul>
     </nav>
   )
