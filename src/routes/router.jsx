@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { createBrowserRouter, Outlet } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Error from './pages/Error'
@@ -7,19 +7,40 @@ import ApartmentPage from './pages/ApartmentPage'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-function RouterComponent() {
+const Layout = () => {
   return (
-    <Router>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/Home" element={Home} />
-        <Route path="/About" element={<About />} />
-        <Route path="/ApartmentPage/:id" element={<ApartmentPage />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <Outlet />{' '}
+      {/* le outlet sert à mettre les données qu'on souhaite, il pourra render les routes imbriquées */}
       <Footer />
-    </Router>
+    </>
   )
 }
 
-export default RouterComponent
+
+export const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/ApartmentPage',
+        element: <ApartmentPage />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+      {
+        path: '/Error',
+        element: <Error />,
+      },
+    ],
+  },
+])
+
+export default Layout
