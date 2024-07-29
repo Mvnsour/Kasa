@@ -32,6 +32,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 10;
+    padding: 8px;
 }
 
 .card-container {
@@ -42,4 +44,17 @@
 
 .card-container a {
     text-decoration: none;
+}
+
+.card-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* style pour assombrir le background du titre */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0, 0.5) 7%, transparent);
+    height: 100%;
+    border-radius: 1rem;
+    z-index: 3;
 }
