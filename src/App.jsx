@@ -1,9 +1,9 @@
 import './styles/App.css'
-import Banner from './components/Banner'
-import Main from './components/Main'
+import Banner from './layout/Banner'
+import Main from './layout/Main'
 import Apartment from './components/Apartment'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Footer from './layout/Footer'
 
 function App() {
   return (
