@@ -3,10 +3,10 @@ import Apartment from '../components/Apartment'
 
 function Home() {
   return (
-    <>
+    <div>
       <Banner />
       <Apartment />
-    </>
+    </div>
   )
 }
 

@@ -1,4 +1,4 @@
-export const apartmentList = [
+const apartmentList = [
   {
     id: 'c67ab8a7',
     title: 'Appartement cosy',
@@ -579,3 +579,5 @@ export const apartmentList = [
     tags: ['Louvre', 'Marais', 'Rivoli'],
   },
 ]
+
+export default apartmentList

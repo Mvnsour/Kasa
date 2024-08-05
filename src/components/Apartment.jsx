@@ -1,4 +1,4 @@
-import { apartmentList } from '../datas/ApartmentList'
+import apartmentList from '../datas/ApartmentList'
 import ApartmentCard from './ApartmentCard'
 import '../styles/Apartment.css'
 
