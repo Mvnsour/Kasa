@@ -1,4 +1,9 @@
 .footer-banner {
     background-color: black;
-    height: 214px;
+    height: 209px;
+    width: auto;
+}
+
+.footer-banner img {
+    max-width: 100%;
 }
