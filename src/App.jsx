@@ -14,8 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ApartmentPage/:id" element={<ApartmentPage />} />
+        {/* path allows to display a page according to the id item */}
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
+        {/* path="*" allows to display a 404 error if the path does not match any set path */}
       </Routes>
       <Footer />
     </Router>
