@@ -2,8 +2,8 @@ import footerBanner from '../assets/footer-banner.png'
 
 function Footer() {
   return (
-    <div className="footer-banner">
-      <img src={footerBanner} alt="" />
+    <div className="footer">
+      <img src={footerBanner} alt="" className="footer-banner" />
     </div>
   )
 }

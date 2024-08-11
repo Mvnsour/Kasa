@@ -1,9 +1,6 @@
 .footer-banner {
     background-color: black;
     height: 209px;
-    width: auto;
-}
-
-.footer-banner img {
     max-width: 100%;
 }
+

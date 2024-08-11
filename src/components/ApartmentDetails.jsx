@@ -8,10 +8,18 @@ function ApartmentDetails() {
     <>
       <div>Apartment n°{id}</div>
       <div className="apartment-details">
+        {/* a garder pour plus tard 
+        d'abord creation du code en dur */}
         {apartmentList.map((apartment) => (
-          <img src={apartment.pictures} alt="" key={apartment.id} />
+          <>
+            <div>
+              <img src={apartment.pictures} alt="" key={apartment.id} />
+            </div>
+            <div className="apartment-page-title"></div>
+          </>
         ))}
       </div>
+      .
     </>
   )
 }
