@@ -4,7 +4,7 @@ function ApartmentCard({ apartment }) {
   return (
     <>
       <div className="card-container">
-        <Link to={`/apartment/${apartment.id}`}>
+        <Link to={`/ApartmentPage/${apartment.id}`}>
           <img
             className="apartment-cover"
             src={apartment.cover}
