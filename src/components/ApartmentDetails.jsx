@@ -12,14 +12,26 @@ function ApartmentDetails() {
         d'abord creation du code en dur */}
         {apartmentList.map((apartment) => (
           <>
-            <div>
+            <>
               <img src={apartment.pictures} alt="" key={apartment.id} />
+            </>
+            <div className="apartment-text-container">
+              <TitleSubtitle>{apartment.title}</TitleSubtitle>
+              <TitleSubtitle>{apartment.location}</TitleSubtitle>
             </div>
-            <div className="apartment-page-title"></div>
           </>
         ))}
       </div>
       .
+    </>
+  )
+}
+
+function TitleSubtitle({ children }) {
+  return (
+    <>
+      <h1 className="apartment-title">{children}</h1>
+      <p className="apartment-p">{children}</p>
     </>
   )
 }
