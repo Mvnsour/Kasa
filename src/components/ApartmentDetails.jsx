@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import apartmentList from '../datas/ApartmentList'
-
+import TitleSubtitle from './TitleSubtitle'
 
 function ApartmentDetails() {
   const { id } = useParams()
@@ -23,15 +23,6 @@ function ApartmentDetails() {
         ))}
       </div>
       .
-    </>
-  )
-}
-
-function TitleSubtitle({ children }) {
-  return (
-    <>
-      <h1 className="apartment-title">{children}</h1>
-      <p className="apartment-p">{children}</p>
     </>
   )
 }
