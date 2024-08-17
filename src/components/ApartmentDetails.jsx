@@ -10,7 +10,6 @@ function ApartmentDetails() {
 
   return (
     <div>
-      <div>Apartment n°{apartment.id}</div>
       <div className="apartment-details">
         <div className="apartment-pictures">
           {apartment.pictures.map((picture, index) => (
