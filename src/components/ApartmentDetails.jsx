@@ -13,7 +13,12 @@ function ApartmentDetails() {
       <div className="apartment-details">
         <div className="apartment-pictures">
           {apartment.pictures.map((picture, index) => (
-            <img src={picture} alt={apartment.title} key={index} />
+            <img
+              src={picture}
+              alt={apartment.title}
+              key={index}
+              className="aprtment-img"
+            />
           ))}
         </div>
         <div className="apartment-text-container">
