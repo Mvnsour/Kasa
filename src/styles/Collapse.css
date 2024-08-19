@@ -1,0 +1,15 @@
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.collapse-title {
+ background-color: red;
+ color: white;
+}
+
+.collapse-content {
+    background-color: grey;
+   }
