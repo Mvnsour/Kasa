@@ -8,7 +8,7 @@ function About() {
     <div className="about-banner-container">
       <img src={AboutBanner} alt="" className="about-banner" />
       {aboutList.map(({ title, content, index }) => (
-        <div key={index}>
+        <div className="about-collapse-container" key={index}>
           <Collapse title={title} content={content} />
         </div>
       ))}

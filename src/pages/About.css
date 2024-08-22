@@ -14,3 +14,7 @@
 
 }
 
+.about-collapse-container {
+    max-width: 1024px;
+    margin: auto;
+}
