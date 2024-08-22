@@ -8,11 +8,15 @@ function Collapse({ title, content }) {
   }
 
   return (
-    <div className="collapse-container">
+    <div className={'collapse-container' + (showContent ? '' : ' collapsed')}>
       <h2 className="collapse-title">
         {title}
         <span>
-          <i class="fa-solid fa-chevron-up" onClick={displayContent}></i>
+          <i
+            className="fa-solid fa-chevron-up collapse-icon"
+            style={{ color: 'white' }}
+            onClick={displayContent}
+          ></i>
         </span>
       </h2>
       <p className="collapse-content">{content}</p>
