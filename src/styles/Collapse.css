@@ -31,15 +31,16 @@
     transform: rotate(0);
 }
 
+.collapse-container .collapse-content{
+    animation: collapse 150ms forwards;
+}
+
+
 .collapse-container.collapsed .collapse-content{
-animation: collapse 3s both;
+    animation: collapse 150ms backwards;
 }
 
-.collapse-container:not(.collapsed) .collapse-content {
-    max-height: 999px; /* Adjust based on the content height */
-}
-
-@keyframes collapse-open {
+@keyframes collapse {
     from {
         max-height: 0;
     }
@@ -48,11 +49,3 @@ animation: collapse 3s both;
     }
 }
 
-@keyframes collapse-close {
-    from {
-        max-height: 999px; 
-    }
-    to {
-        max-height: 0;
-    }
-}
