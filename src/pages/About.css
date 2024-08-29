@@ -1,20 +1,26 @@
 .about-banner-container {
-    width: 100%;
     margin: 0 2rem;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .about-banner {
     height: 223px;
-    width: 90%;
+    width: 1240px;
     border-radius: 2rem;
     object-fit: cover; 
-
 }
 
 .about-collapse-container {
-    max-width: 1024px;
-    margin: auto;
+    width: 70%;
+}
+
+.main-collapse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
 }

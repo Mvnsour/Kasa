@@ -5,14 +5,18 @@ import aboutList from '../datas/AboutList'
 
 function About() {
   return (
-    <div className="about-banner-container">
-      <img src={AboutBanner} alt="" className="about-banner" />
-      {aboutList.map(({ title, content, index }) => (
-        <div className="about-collapse-container" key={index}>
-          <Collapse title={title} content={content} />
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="about-banner-container">
+        <img src={AboutBanner} alt="" className="about-banner" />
+      </div>
+      <div className="main-collapse-container">
+        {aboutList.map(({ title, content, index }) => (
+          <section className="about-collapse-container" key={index}>
+            <Collapse title={title} content={content} />
+          </section>
+        ))}
+      </div>
+    </>
   )
 }
 
