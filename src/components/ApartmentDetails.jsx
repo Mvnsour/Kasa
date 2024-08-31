@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import apartmentList from '../datas/ApartmentList'
 import TitleAndLocation from './TitleAndLocation'
+import Collapse from './Collapse'
 
 function ApartmentDetails() {
   const { id } = useParams()
@@ -28,6 +29,8 @@ function ApartmentDetails() {
             location={apartment.location}
             id={id}
           />
+          <Collapse title="Description" content={apartment.description} />
+          <Collapse title="Équipments" content={apartment.equipments} />
         </div>
       </div>
     </div>

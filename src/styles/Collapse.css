@@ -31,8 +31,8 @@
     transform: rotate(0);
 }
 
-.collapse-container .collapse-content{
-    animation: collapse 150ms forwards;
+.collapse-container.expend .collapse-content{
+    animation: collapse 3000ms forwards;
 }
 
 

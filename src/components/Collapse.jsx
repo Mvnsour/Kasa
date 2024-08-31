@@ -8,7 +8,11 @@ function Collapse({ title, content }) {
   }
 
   return (
-    <div className={'collapse-container' + (showContent ? '' : ' collapsed')}>
+    <div
+      className={
+        'collapse-container' + (showContent ? ' expend' : ' collapsed')
+      }
+    >
       <h2 className="collapse-title">
         {title}
         <span>
@@ -19,7 +23,17 @@ function Collapse({ title, content }) {
           ></i>
         </span>
       </h2>
-      <p className="collapse-content">{content}</p>
+      <div className="collapse-content">
+        {typeof content === 'string' ? (
+          <p>{content}</p>
+        ) : (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   )
 }
