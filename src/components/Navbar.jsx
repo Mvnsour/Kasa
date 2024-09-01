@@ -1,4 +1,4 @@
-import '../styles/Navbar.css'
+import '../styles/Navbar.scss'
 import kasaLogo from '../assets/logo-kasa.png'
 import { Link } from 'react-router-dom'
 
@@ -10,12 +10,12 @@ function Navbar() {
           <img src={kasaLogo} alt="Logo Kasa" className="logo-kasa" />
         </div>
       </Link>
-      <ul>
+      <ul className="navbar-link-container">
         <Link to="/" className="nav-link">
-          Acueil{' '}
+          Accueil
         </Link>
         <Link to="/about" className="nav-link">
-          A propos
+          À propos
         </Link>
       </ul>
     </nav>
