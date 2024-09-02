@@ -1,4 +1,4 @@
-import '../scss/Banner.scss'
+import '../styles/Banner.css'
 
 function Banner() {
   return (

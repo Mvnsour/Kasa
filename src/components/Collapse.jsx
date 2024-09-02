@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../scss/Collapse.scss'
+import '../styles/Collapse.css'
 
 function Collapse({ title, content }) {
   const [showContent, setShowContent] = useState(false)
@@ -27,11 +27,9 @@ function Collapse({ title, content }) {
         {typeof content === 'string' ? (
           <p>{content}</p>
         ) : (
-          <ul className="ul-collapse-container">
+          <ul>
             {content.map((item, index) => (
-              <li key={index} className="li-collapse">
-                {item}
-              </li>
+              <li key={index}>{item}</li>
             ))}
           </ul>
         )}
