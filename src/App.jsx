@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Error from './pages/Error'
 import ApartmentPage from './pages/ApartmentPage'
-import './styles/App.css'
+import './App.css'
 
 function App() {
   return (
