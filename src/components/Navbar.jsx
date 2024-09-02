@@ -1,4 +1,4 @@
-import '../styles/Navbar.scss'
+import '../scss/Navbar.scss'
 import kasaLogo from '../assets/logo-kasa.png'
 import { Link } from 'react-router-dom'
 
