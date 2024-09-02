@@ -1,0 +1,54 @@
+.background-apartments-grid 
+  background-color: lightgray
+  min-height: 50vh
+  border-radius: 2rem
+  flex-wrap: wrap
+  gap: 1rem
+  display: flex
+  justify-content: space-around
+  padding: 1rem
+
+
+.apartment-list 
+  border-radius: 2rem
+  margin: 1rem
+  padding: 1rem
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  flex-wrap: wrap
+  align-items: start
+
+
+.apartment-cover 
+  object-fit: cover
+  width: 100%
+  height: 100%
+  border-radius: 1rem
+
+.apartment-title 
+  color: white
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10
+  padding: 8px
+
+.card-container 
+  position: relative
+  width: 340px
+  height: 340px
+  & a 
+    text-decoration: none
+    &::after 
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      /* style pour assombrir le background du titre */
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0, 0.5) 7%, transparent)
+      height: 100%
+      border-radius: 1rem
+      z-index: 3

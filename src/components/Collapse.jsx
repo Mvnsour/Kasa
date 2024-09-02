@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../scss/Collapse.scss'
+import '../sass/Collapse.sass'
 
 function Collapse({ title, content }) {
   const [showContent, setShowContent] = useState(false)

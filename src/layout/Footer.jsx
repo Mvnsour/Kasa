@@ -1,5 +1,5 @@
 import footerBanner from '../assets/footer-banner.png'
-import '../scss/Footer.scss'
+import '../sass/Footer.sass'
 
 function Footer() {
   return (

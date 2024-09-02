@@ -1,6 +1,6 @@
 import apartmentList from '../datas/ApartmentList'
 import ApartmentCard from './ApartmentCard'
-import '../scss/Apartment.scss'
+import '../sass/Apartment.sass'
 
 function Apartment() {
   return (

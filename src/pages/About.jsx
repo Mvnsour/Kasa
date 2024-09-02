@@ -1,5 +1,5 @@
 import AboutBanner from '../assets/about-banner.png'
-import './About.scss'
+import './About.sass'
 import Collapse from '../components/Collapse'
 import aboutList from '../datas/AboutList'
 
