@@ -1,7 +1,9 @@
 import { useParams } from 'react-router-dom'
 import apartmentList from '../datas/ApartmentList'
 import TitleAndLocation from './TitleAndLocation'
+import Tags from './Tags'
 import Collapse from './Collapse'
+import '../sass/ApartmentDetails.sass'
 
 function ApartmentDetails() {
   const { id } = useParams()
@@ -18,7 +20,7 @@ function ApartmentDetails() {
               src={picture}
               alt={apartment.title}
               key={index}
-              className="aprtment-img"
+              className="apartment-img"
             />
           ))}
         </div>
@@ -29,9 +31,10 @@ function ApartmentDetails() {
             location={apartment.location}
             id={id}
           />
-          <Collapse title="Description" content={apartment.description} />
-          <Collapse title="Équipments" content={apartment.equipments} />
+          <Tags tags={apartment.tags} />
         </div>
+        <Collapse title="Description" content={apartment.description} />
+        <Collapse title="Équipments" content={apartment.equipments} />
       </div>
     </div>
   )
