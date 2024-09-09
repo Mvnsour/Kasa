@@ -4,7 +4,8 @@ import TitleAndLocation from './TitleAndLocation'
 import Tags from './Tags'
 import Collapse from './Collapse'
 import '../sass/ApartmentDetails.sass'
-import HostAndRating from './HostAndRating'
+import HostAndPicture from './HostAndPicture'
+import StarRating from './StarRating'
 
 function ApartmentDetails() {
   const { id } = useParams()
@@ -34,10 +35,11 @@ function ApartmentDetails() {
           />
           <Tags tags={apartment.tags} />
         </div>
-        <HostAndRating
+        <HostAndPicture
           host={apartment.host.name}
           picture={apartment.host.picture}
         />
+        <StarRating rating={apartment.rating} />
         <Collapse title="Description" content={apartment.description} />
         <Collapse title="Équipments" content={apartment.equipments} />
       </div>
