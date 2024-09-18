@@ -4,7 +4,9 @@ import TitleAndLocation from './TitleAndLocation'
 import Tags from './Tags'
 import Collapse from './Collapse'
 import '../sass/ApartmentDetails.sass'
-import HostAndRating from './HostAndRating'
+import HostAndPicture from './HostAndPicture'
+import StarRating from './StarRating'
+import SlideShow from './SlideShow'
 
 function ApartmentDetails() {
   const { id } = useParams()
@@ -16,14 +18,7 @@ function ApartmentDetails() {
     <div>
       <div className="apartment-details">
         <div className="apartment-pictures">
-          {apartment.pictures.map((picture, index) => (
-            <img
-              src={picture}
-              alt={apartment.title}
-              key={index}
-              className="apartment-img"
-            />
-          ))}
+          <SlideShow pictures={apartment.pictures} />
         </div>
         <div className="apartment-text-container">
           {/* Passer le titre et l'ID au composant TitleAndLocation */}
@@ -34,10 +29,11 @@ function ApartmentDetails() {
           />
           <Tags tags={apartment.tags} />
         </div>
-        <HostAndRating
+        <HostAndPicture
           host={apartment.host.name}
           picture={apartment.host.picture}
         />
+        <StarRating rating={apartment.rating} />
         <Collapse title="Description" content={apartment.description} />
         <Collapse title="Équipments" content={apartment.equipments} />
       </div>
