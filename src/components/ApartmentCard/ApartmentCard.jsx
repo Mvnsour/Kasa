@@ -7,7 +7,7 @@ function ApartmentCard({ apartment }) {
       <article className="apartment-card">
         <img 
           className="apartment-card__cover"
-          src={apartment.cover}
+          src={`${import.meta.env.BASE_URL}${apartment.cover}`}
           alt={`${apartment.title} cover`}
         />
         <span>{apartment.title}</span>

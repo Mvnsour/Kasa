@@ -4,7 +4,10 @@ function Host({ host, picture }) {
       return (
         <div className="host-container">
           <h3 className="host__name">{host}</h3>
-            <img src={picture} alt={`${host} badge`} className="host__picture" />
+            <img
+            src={`${import.meta.env.BASE_URL}$${picture}`}
+            alt={`${host} badge`} 
+            className="host__picture" />
         </div>
       )
     }

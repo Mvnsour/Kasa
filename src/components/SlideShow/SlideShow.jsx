@@ -20,7 +20,7 @@ function SlideShow({ pictures, title }) {
   return (
     <figure className="slideshow">
       <img
-        src={pictures[currentIndex]}
+        src={`${import.meta.env.BASE_URL}${pictures[currentIndex]}`}
         alt={`${title} ${currentIndex + 1}`}
         className="slideshow__image"
       />
