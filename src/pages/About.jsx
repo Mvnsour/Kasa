@@ -1,4 +1,4 @@
-import AboutBanner from '../assets/images/banners/about-banner.png';
+import AboutBanner from '/public/assets/images/banners/about-banner.png';
 import Collapse from '../components/Collapse/Collapse';
 import './About.scss';
 import aboutList from '../data/aboutList.json';

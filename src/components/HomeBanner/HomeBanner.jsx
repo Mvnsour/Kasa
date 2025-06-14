@@ -1,4 +1,4 @@
-import WelcomeBanner from '../../assets/images/banners/home-banner.png';
+import WelcomeBanner from '/assets/images/banners/home-banner.png';
 import './HomeBanner.scss'
 
 function HomeBanner() {

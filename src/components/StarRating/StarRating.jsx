@@ -1,6 +1,6 @@
 import './StarRating.scss';
-import redStar from '../../assets/svg/red-star.svg'
-import greyStar from '../../assets/svg/grey-star.svg'
+import redStar from '/assets/svg/red-star.svg'
+import greyStar from '/assets/svg/grey-star.svg'
 function StarRating({ rating }) {
   const rate = [1, 2, 3, 4, 5]
   return (

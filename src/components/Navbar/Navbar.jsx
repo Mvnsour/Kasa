@@ -1,4 +1,4 @@
-import logoKasa from '../../assets/logo/logo-kasa.png';
+import logoKasa from '/assets/logo/logo-kasa.png';
 import { NavLink } from 'react-router';
 import './Navbar.scss';
 
