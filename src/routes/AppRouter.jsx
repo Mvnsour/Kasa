@@ -5,32 +5,37 @@ import About from '../pages/About';
 import NotFound from '../pages/NotFound';
 import ApartmentPage from '../pages/ApartmentPage';
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <NotFound />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
+        },
+        {
+          path: "ApartmentPage/:id",
+          element: <ApartmentPage />,
+        },
+        {
+          path: "error",
+          element: <NotFound />,
+        }
+      ],
+    }
+  ],
   {
-    path: "/",
-    element: <Layout />,
-    errorElement: <NotFound />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "*",
-        element: <NotFound />,
-      },
-      {
-        path: "ApartmentPage/:id",
-        element: <ApartmentPage />,
-      },
-      {
-        path: "error",
-        element: <NotFound />,
-      }
-    ],
+    basename: import.meta.env.BASE_URL, // This is used to set the base URL for the router
   }
-]);
+);
