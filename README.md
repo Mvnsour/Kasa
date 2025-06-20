@@ -16,13 +16,6 @@ J'ai débuté le projet avec Vite, un outil qui a simplifié la configuration in
 
 # EN : Create a real estate rental web application with React
 
-- Desktop demo:
-
-  
-- Mobile demo: 
-
-
-
 - [Figma mock-up](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?node-id=0-1&p=f&t=A8bJbHukVnq7ufTa-0)
 - [Prototype](https://www.figma.com/proto/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?type=design&node-id=3-0&t=x8RBKuR4UiE3hhBW-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A0&show-proto-sidebar=1)
 
