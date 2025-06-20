@@ -32,7 +32,11 @@
       font-size: 24px;
 
       span {
-        display: inline;
+        display: inline-block;
+
+        &:first-of-type { 
+        margin-right: 3px;
+        }
       }
     }
   }
